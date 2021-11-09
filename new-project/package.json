@@ -1,5 +1,6 @@
 {
   "name": "new-project",
+  "title": "New Project",
   "version": "0.1.0",
   "private": true,
   "scripts": {

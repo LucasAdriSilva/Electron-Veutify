@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dark>
-      <v-toolbar-tittle> Unspecified Project</v-toolbar-tittle>
+      <v-toolbar-title> Unspecified Project</v-toolbar-title>
     </v-app-bar>
 
     <v-main>

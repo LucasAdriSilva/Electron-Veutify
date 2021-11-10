@@ -1,14 +1,18 @@
 <template>
     <v-container fluid> 
-        <v-forme>
+        <v-form>
             <v-file-input 
             label="Selecione as legendas"
+            prepend-icon="mdi-message-text"
+            append-outer-icon="mdi-send"
+            outlined
             multiple 
             chips 
-            v-model="files" />
+            v-model="files" 
+            @click:append-outer="processSubtitles"/>
 
            
-        </v-forme>
+        </v-form>
         <div class="pills">
             <Pill v-for="word in grupedWord" :key="word.name" :name="word.name" :amount="word.amount"/>
         </div>
@@ -27,25 +31,7 @@ export default {
             grupedWord:[
                 {name: 'you', amount: 900},
                 {name: 'i', amount: 6541},
-                {name: 'she', amount: 645},
-                {name: 'you', amount: 900},
-                {name: 'i', amount: 6541},
-                {name: 'she', amount: 645},
-                {name: 'you', amount: 900},
-                {name: 'i', amount: 6541},
-                {name: 'she', amount: 645},
-                {name: 'you', amount: 900},
-                {name: 'i', amount: 6541},
-                {name: 'she', amount: 645},
-                {name: 'you', amount: 900},
-                {name: 'i', amount: 6541},
-                {name: 'she', amount: 645},
-                {name: 'you', amount: 900},
-                {name: 'i', amount: 6541},
-                {name: 'she', amount: 645},
-                {name: 'you', amount: 900},
-                {name: 'i', amount: 6541},
-                {name: 'she', amount: 645},
+                {name: 'she', amount: 645},           
 
             ]
         }
